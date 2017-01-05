@@ -9,10 +9,6 @@ services:
       - "9000:9000"
     links:
       - elasticsearch
-    extra_hosts:
-      - "esnode1:10.202.101.176"
-      - "esnode2:10.202.101.185"
-      - "esnode3:10.202.101.186"
   elasticsearch:
     image: elasticsearch:5.1.1
     container_name: elasticsearch
