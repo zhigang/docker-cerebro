@@ -14,7 +14,7 @@ RUN set -x \
 	&& gosu nobody true
 
 #https://github.com/lmenezes/cerebro
-ENV CEREBRO_VERSION 0.4.1
+ENV CEREBRO_VERSION 0.6.5
 
 RUN cd /opt/ \
     && wget -O cerebro-${CEREBRO_VERSION}.tgz https://github.com/lmenezes/cerebro/releases/download/v${CEREBRO_VERSION}/cerebro-${CEREBRO_VERSION}.tgz \
